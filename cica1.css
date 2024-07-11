@@ -1,0 +1,61 @@
+/**BACKGROUND**/
+body{background:url(https://github.com/SaddamxHussein/fortnite/blob/main/wife.png?raw=true) rgba(0,0,0,0);} /**The background url HAS to use https!**/
+body{background-repeat: no-repeat;}
+body{background-size: cover;}
+/** remove grey backgrounds **/
+.theme-dark .friends-table, .theme-dark .messages-wrapper, .theme-dark .chat, .channels-Ie2l6A, .guilds-wrapper, .container-2lgZY8, .theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .theme-dark .typing-2GQL18,
+.theme-dark .members-1998pB, .theme-dark .chat>.content, .theme-dark .title-3qD0b-, .container-PNkimc, .channels-Ie2l6A, #app-mount, .theme-dark .chat form, .container-2Thooq, .theme-dark .headerBar-UHpsPw,
+.theme-dark .friends-table .messages .divider:before, .theme-dark .friends-table .messages .divider span, .theme-dark .messages-wrapper .messages .divider:before, .theme-dark .messages-wrapper .messages .divider span, .theme-dark #friends
+{
+    background:rgba(0,0,0,0) !important;
+}
+.typeWindows-1za-n7 {display:none;}
+
+/**custom styling**/
+/*** without the gray backgrounds, some of the styling just doesn't work, replacing it with transparent blacks and or transparent versions of their original color makes much more sense ***/
+.contentSelectedText-3wUhMi,.private-channels .channel.selected a,.private-channels .channel:hover a,
+.contentHoveredText-2D9B-x, .contentHoveredVoice-3p_NEO:active,.contentSelectedVoice-1WDIBM:active,
+.theme-dark .member-3W1lQa:hover .content-OzHfo4, .theme-dark .member-3W1lQa.popout-open .content-OzHfo4, .theme-dark .member-3W1lQa.popout-open:hover .content-OzHfo4,
+.theme-dark #friends .friends-table .friends-row:hover {
+    background:rgba(0,0,0,0.3)!important;
+}
+.theme-dark .message-group .comment .markup code.inline{
+    background:rgba(46,49,54,0.5)!important;
+}
+/** scrollbar **/
+.theme-dark .member-2FrNV0:hover .content-3JzEqq, .theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-thumb, .theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-thumb {
+    background-color:rgba(0,0,0,0.5);
+    border-color:transparent;
+}
+.scroller-wrap .scroller::-webkit-scrollbar-thumb, .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
+    border-color:transparent;
+    background-clip: padding-box;
+    border: 3px solid #fff;
+    border-radius: 7px;
+}
+.theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-track-piece, .theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-track-piece {
+    background-color:transparent;
+    border-color:transparent;
+}
+.scroller-wrap .scroller::-webkit-scrollbar-track-piece {
+    background-color: #f3f3f3;
+}
+.scroller-wrap .scroller::-webkit-scrollbar-thumb, .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
+    background-color:transparent;
+    background-clip: padding-box;
+    border: 3px solid rgba(0,0,0,0);
+    border-radius: 7px;
+}
+
+/**adding transparent gradients**/
+/*** while technically also optional, I find no background is ever dark enough without looking bad ***/
+.app-19_DXt{
+    background:linear-gradient(to right,rgba(0,0,0,0.3),rgba(0,0,0,0.75) 310px,rgba(0,0,0,0.45) 70%,rgba(0,0,0,0) 95%) !important;
+}
+
+/** optional fun **/
+img.emoji.jumboable{margin:0px !important;}/**fix emoji spacing for 2x2 emotes**/
+img.emoji:not(.jumboable){height:32px !important;width:auto !important;}/**never resize emoji**/
+.reaction img.emoji{height:16px !important;}/**nvm actually do resize reactions**/
+.emojiPicker-3m1S-j{height:500px;}/** larger emojipicker part 1**/
+.emojiPicker-3m1S-j .scroller-3vODG7{height:400px !important;}/** larger emojipicker part 2**/
