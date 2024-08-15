@@ -89,7 +89,7 @@
 	--chattyBackgroundImage: url(https://steamuserimages-a.akamaihd.net/ugc/2032857834657974579/3690E3F9328996907AE249A872CCE8F8E54D35B8/);
 	--chattyBorderRadius: 15px;
 	--chattyPadding: 10px;
-	--chattyBlur: 4px;
+	--chattyBlur: 0px; 
 	--interactive-muted: #D08770;
 	--background-primary: rgba(0, 0, 0, 0.2);
 	--background-secondary: rgba(0, 0, 0, 0.3);
@@ -515,7 +515,16 @@ body.theme-dark {
 	background-size: cover !important;
 	background-position: center !important;
 }
-body { background-color: var(--dplus-accent-ui); }
+body { background-color: var(--dplus-accent-ui); 
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: var(--dplus-backdrop);
+    background-repeat: var(--dplus-background-repeat);
+    background-size: var(--dplus-background-size);
+    background-attachment: var(--dplus-background-attachment);
+    background-position: center;
+}
 .appMount_ea7e65, .app_a01fb1, .bg_d4b6c5, .bg_d4b6c5, .app_a01fb1 {background-color: transparent;}
 		/*- 3.1.1 Transparent Mode / Light Mode Specifics -*/
 .bd-transparency, .bd-transparency #app-mount {background: transparent !important;}
