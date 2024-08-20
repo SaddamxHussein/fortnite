@@ -1,0 +1,123 @@
+/**
+ * @name Discord+ (Source - Extras)
+ * @author PlusInsta
+ * @authorId 309931975102300160
+ * @authorLink https://plusinsta.xyz
+ * @version 3.2.1
+ * @description For development of supplemental features.
+ * @donate https://ko-fi.com/plusinsta
+ * @website https://plusinsta.github.io/discord-plus
+ * @source https://github.com/PlusInsta/discord-plus
+ * @updateUrl https://plusinsta.github.io/discord-plus/src/DiscordPlus-extras.theme.css
+ * @invite 2Jwh2nS
+*/
+
+@import url('https://plusinsta.github.io/discord-plus/src/tweaks/compact.css');
+
+@font-face { /* a font i made */
+  font-family: PixelPetit;
+  src: url("https://plusinsta.xyz/assets/fonts/PixelPetit.ttf");
+}
+
+/* make links to my domain use my style */
+[href*="plusinsta.xyz"],
+[href*="PlusInsta.xyz"] {
+  color: #d29630 !important;
+  border-bottom: 1px solid;
+  font-family: PixelPetit;
+}
+
+
+/* put a nice logo in my server's channel list */
+.theme-dark [data-list-item-id="channels___554914403011526675"] .name_a08117,
+.theme-light .theme-dark [data-list-item-id="channels___554914403011526675"] .name_a08117,
+.theme-light [data-list-item-id="channels___554914403011526675"] .name_a08117 {
+  font-size: 0;
+  background: no-repeat url(//plusinsta.github.io/discord-plus/assets/wordmark_white.svg);
+  background-size: 54px 13px;
+  width: 54px; height: 13px;
+  opacity: 0.65;
+  color: transparent;
+}
+.theme-light [data-list-item-id="channels___554914403011526675"] .name_a08117 {
+  background: no-repeat url(//plusinsta.github.io/discord-plus/assets/wordmark_black.svg);
+}
+
+[data-list-item-id="channels___554914403011526675"]:hover .name_a08117 { opacity: 0.75 }
+
+/* PLEASE READ THE FAQ */
+[data-list-item-id="channels___804000972568526889"] .channelName-3KPsGw {
+  width: min-content;
+  border-radius: var(--dplus-radius-ui);
+  border: 3px solid red;
+  padding: 3px;
+}
+[data-list-item-id="channels___804000972568526889"] .channelName-3KPsGw::after {
+  content: " <- READ FIRST";
+  color: red;
+}
+
+/* Supporters */
+.member_cbd271:has([src*="220275692926009344"]), .contents_f9f2ca:has([src*="220275692926009344"]), .userProfileModalInner_c69a7b:has([src*="220275692926009344"])
+.member_cbd271:has([src*="367617500021784587"]), .contents_f9f2ca:has([src*="367617500021784587"]), .userProfileModalInner_c69a7b:has([src*="367617500021784587"]),
+.member_cbd271:has([src*="719378258491342878"]), .contents_f9f2ca:has([src*="719378258491342878"]), .userProfileModalInner_c69a7b:has([src*="719378258491342878"]),
+.member_cbd271:has([src*="644964603108786233"]), .contents_f9f2ca:has([src*="644964603108786233"]), .userProfileModalInner_c69a7b:has([src*="644964603108786233"]),
+.member_cbd271:has([src*="299958646748741632"]), .contents_f9f2ca:has([src*="299958646748741632"]), .userProfileModalInner_c69a7b:has([src*="299958646748741632"]),
+.member_cbd271:has([src*="354342865695932423"]), .contents_f9f2ca:has([src*="354342865695932423"]), .userProfileModalInner_c69a7b:has([src*="354342865695932423"]),
+.member_cbd271:has([src*="275432265100558336"]), .contents_f9f2ca:has([src*="275432265100558336"]), .userProfileModalInner_c69a7b:has([src*="275432265100558336"]),
+.member_cbd271:has([src*="852664018438717481"]), .contents_f9f2ca:has([src*="852664018438717481"]), .userProfileModalInner_c69a7b:has([src*="852664018438717481"]),
+.member_cbd271:has([src*="299339580593799171"]), .contents_f9f2ca:has([src*="299339580593799171"]), .userProfileModalInner_c69a7b:has([src*="299339580593799171"]),
+.member_cbd271:has([src*="224367608382619648"]), .contents_f9f2ca:has([src*="224367608382619648"]), .userProfileModalInner_c69a7b:has([src*="224367608382619648"]),
+.member_cbd271:has([src*="356817504330448906"]), .contents_f9f2ca:has([src*="356817504330448906"]), .userProfileModalInner_c69a7b:has([src*="356817504330448906"]),
+.member_cbd271:has([src*="181240443747434496"]), .contents_f9f2ca:has([src*="181240443747434496"]), .userProfileModalInner_c69a7b:has([src*="181240443747434496"]),
+.member_cbd271:has([src*="168569629906698240"]), .contents_f9f2ca:has([src*="168569629906698240"]), .userProfileModalInner_c69a7b:has([src*="168569629906698240"]),
+.member_cbd271:has([src*="408875276265848833"]), .contents_f9f2ca:has([src*="408875276265848833"]), .userProfileModalInner_c69a7b:has([src*="408875276265848833"]) {
+  --dplus-badge: url("https://plusinsta.github.io/discord-plus/assets/badges/badge_supporter.svg");
+  --dplus-supporter: "";
+}
+/* Developers */
+.member_cbd271:has([src*="309931975102300160"]), .contents_f9f2ca:has([src*="309931975102300160"]), .userProfileModalInner_c69a7b:has([src*="309931975102300160"]),
+.member_cbd271:has([src*="207335168430702602"]), .contents_f9f2ca:has([src*="207335168430702602"]), .userProfileModalInner_c69a7b:has([src*="207335168430702602"]),
+.member_cbd271:has([src*="394891840815366147"]), .contents_f9f2ca:has([src*="394891840815366147"]), .userProfileModalInner_c69a7b:has([src*="394891840815366147"]) {
+  --dplus-badge: url("https://plusinsta.github.io/discord-plus/assets/badges/badge_dev.svg");
+  --dplus-dev: "";
+}
+
+/* Badges */
+.headerText-15Q25Z:after, .headerTop-1PNKck:before,
+.headerTag-16AlQV:after, .text-lg-semibold__84aef:after
+  { filter: drop-shadow(0px 0px 2px black); }
+.headerText_f9f2ca:after, .text-lg-semibold__84aef::after{
+  background-image: var(--dplus-badge); margin-left: 10px;
+  width: 80px; height: 1rem; background-repeat: no-repeat; content: var(--dplus-dev, var(--dplus-supporter)); display: inline-block; z-index: 0; }
+
+  /* D+ badge in member list */
+.username_a31c43:after {
+  content: var(--dplus-dev, var(--dplus-supporter));
+  background-image: var(--dplus-badge-memberlist);
+  margin-left: 3px;
+  display: inline-block;
+  width: 14px; height: 14px;
+}
+
+.theme-dark { --dplus-badge-memberlist: url("https://plusinsta.github.io/discord-plus/assets/discord/home_dark.svg"); }
+.theme-light { --dplus-badge-memberlist: url("https://plusinsta.github.io/discord-plus/assets/discord/home_light.svg"); }
+
+  /* Badge for Michelle */
+.userProfileModalInner_c69a7b:has([src*="220275692926009344"])  .text-lg-semibold__84aef:after
+{ background-image: url("https://plusinsta.github.io/discord-plus/assets/badges/badge_vip_michelle.svg");
+  width: 96px; height: 20px; background-size: cover; content: ""; display: inline-block; z-index: 0; }
+[data-user-id="220275692926009344"] .topSection-13QKHs header:after
+{ margin-left: 16px; }
+[data-user-id="220275692926009344"] .nameTagSmall-2JO-C-
+{ margin-bottom: 0; }
+
+/* :) */
+.theme-dark #app-mount {
+  --aiden: hsl(0, 0%, 94%);
+  --aiden-sad: hsl(240, 80%, 84%);
+}
+.theme-light #app-mount {
+  --aiden: hsl(0, 0%, 6%);
+  --aiden-sad: hsl(240, 80%, 16%);
+}
