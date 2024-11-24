@@ -4,11 +4,11 @@
         "author": "Sakiro#6328",
         "license": "CEA",
         "name": "Windows 11 Theme",
-        "updater": "https:\/\/raw.githubusercontent.com\/CaioAlbuquerque123\/Windows-11-Theme\/main\/Windows11Theme.json"
+        "updater": "https://github.com/SaddamxHussein/fortnite/raw/refs/heads/main/aa.json"
     },
     "background": {
         "overlay_alpha": 120,
-        "url": "https://wimg.rule34.xxx//images/444/1ab721c0de93249fa99cfa1479461a79.jpeg"
+        "url": "https://wimg.rule34.xxx//images/1459/337d78818f0fa43aa091b7d4ef0764d3.png"
     },
     "fonts": {
         "ginto_bold": "https:\/\/cdn.discordapp.com\/attachments\/1088924848132206593\/1091420150143647764\/Segoe-UI-Variable-Static-Text-Bold.ttf",
